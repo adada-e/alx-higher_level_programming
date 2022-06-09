@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-import sys
-
-
-def main():
-    list_arguments = sys.argv
-    sum = 0
-    for count in range(1, len(list_arguments)):
-        sum += int(list_arguments[count])
-    print("{}".format(sum))
-
-
 if __name__ == "__main__":
-    main()
+
+    from sys import argv
+    result = 0
+    if len(argv) == 1:
+        print(0)
+    else:
+        for i in range(1, len(argv)):
+            result += int(argv[i])
+        print(result)
