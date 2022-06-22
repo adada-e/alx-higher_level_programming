@@ -5,6 +5,4 @@
 
 class Square:
     """Represent a square."""
-    pass#!/usr/bin/python3
-class Square:
     pass
